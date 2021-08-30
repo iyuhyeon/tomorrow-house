@@ -1,5 +1,5 @@
-body {
-    background-color: #dfdfdf;
-    color: #fff;
-    text-align: center;
+@import './base/fonts';
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
 }
