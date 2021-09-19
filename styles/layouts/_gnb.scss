@@ -1,0 +1,45 @@
+.gnb {
+  position: relative;
+  border-bottom: 1px solid $border;
+
+  &-wrapper {
+    @include flexbox(between);
+    height: 50px;
+  }
+
+  .logo {
+    @include pos-center();
+
+    a,
+    img {
+      display: block;
+    }
+
+    img {
+      width: auto;
+      height: 20px;
+    }
+  }
+
+  &-right {
+    .button-group {
+      @include flexbox(end);
+    }
+  }
+
+  &-icon-button {
+    @include inline-flexbox();
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    color: $secondary;
+  }
+
+  &-icon-button + &-icon-button {
+    margin-left: 4px;
+  }
+
+  &-menu-button {
+    color: $blue;
+  }
+}
