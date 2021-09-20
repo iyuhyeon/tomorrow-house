@@ -5,20 +5,17 @@
 
   &-item {
     a {
+      display: block;
+      padding: 12px;
       @include text-style(18, $primary);
       font-weight: 700;
+    }
 
-      &:hover {
+    &.is-active,
+    &:hover {
+      a {
         color: $blue;
       }
     }
-
-    &.is-active {
-      color: $blue;
-    }
-  }
-
-  &-item + &-item {
-    margin-left: 24px;
   }
 }
